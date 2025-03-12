@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module Selection</title>
+  <style>
+    /* Basic styling (you can adjust or replace with your own CSS framework) */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F9FAFB;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1F2937;
+      margin-bottom: 16px;
+    }
+    .header p {
+      font-size: 1.125rem;
+      color: #4B5563;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .card {
+  width: 300px; /* Fixed width */
+  min-height: 250px; /* Adjust the height as needed */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures button stays at the bottom */
+}
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .icon-container {
+      padding: 12px;
+      background-color: #DBEAFE;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-container svg {
+      width: 24px;
+      height: 24px;
+      color: #2563EB;
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .card p {
+      color: #4B5563;
+      margin-bottom: 24px;
+    }
+    .btn {
+      width: 100%;
+            padding: 10px;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn:disabled {
+      background-color: #aaa;
+      cursor: not-allowed;
+    }
+  </style>
 </head>
 <body>
-    
+  <!-- Container where the module selection will be rendered -->
+  <div id="moduleContainer"></div>
+
+  <script>
+    // Data for modules
+    const modules = [
+      { id: 0, title: 'JavaScript Fundamentals', description: 'Core JavaScript concepts including variables, data types, functions, and arrays' },
+      { id: 1, title: 'Module 1', description: `introduction to Number  system,binary numbers , how computer thinks  though logic gates` },
+      { id: 2, title: 'Module 2', description: 'Currently unavailable' },
+      { id: 3, title: 'Module 3', description: 'Currently unavailable' }
+    ];
+
+    // Function to render the module selection HTML
+    function renderModuleSelection(container) {
+      container.innerHTML = `
+        <div class="container">
+          <div class="header">
+            <h1>Select Your Module</h1>
+            <p>Choose the module you've completed to begin your assessment</p>
+          </div>
+          <div class="grid">
+            ${modules.map(module => `
+              <div class="card">
+                <div class="card-header">
+                  <div class="icon-container">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+                      <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+                    </svg>
+                  </div>
+                  <h3>${module.title}</h3>
+                </div>
+                <p>${module.description}</p>
+                <button 
+                  class="btn" 
+                  onclick="window.location.hash = '/instructions'"
+                           >
+                  Select Module
+                </button>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    // Render the module selection once the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      const container = document.getElementById('moduleContainer');
+      renderModuleSelection(container);
+    });
+  </script>
 </body>
 </html>

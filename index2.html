@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            display: flex;
+            align-items: start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .blue { background: #e0f2fe; color: #0369a1; }
+        .green { background: #d1fae5; color: #065f46; }
+        .red { background: #fee2e2; color: #b91c1c; }
+        .purple { background: #ede9fe; color: #5b21b6; }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .secondary { background: #e5e7eb; }
+        .primary { background: #2563eb; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Assessment Instructions - JavaScript Fundamentals</h1>
+        <div class="section">
+            <div class="icon blue">🕒</div>
+            <div>
+                <h2>Theoretical Round (15 minutes)</h2>
+                <p>Answer AI-interviewer questions in English, Hindi, or both. Stay engaged; silence for 30 seconds will skip the question.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="icon green">💻</div>
+            <div>
+                <h2>Practical Coding Test</h2>
+                <p>Receive a coding problem and submit your solution within the time limit. AI may ask follow-up questions.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="icon red">⚠️</div>
+            <div>
+                <h2>Important Rules</h2>
+                <ul>
+                    <li>Video and audio will be recorded.</li>
+                    <li>Cheating results in termination.</li>
+                    <li>Maintain professional behavior.</li>
+                    <li>Ensure a stable internet connection.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="icon purple">📊</div>
+            <div>
+                <h2>Evaluation Criteria</h2>
+                <p>Pass (90%+): Progress with feedback. Fail: Receive improvement areas and recommendations.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="button secondary" onclick="window.location.href='index.html'">Back to Modules</button>
+            <button class="button primary" onclick="window.location.href='assessment.html'">Start Assessment</button>
+        </div>
+    </div>
+</body>
+</html>
