@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Preparation</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Interview Preparation</h2>
+        <label for="topic">Select Topic:</label>
+        <select id="topic">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+        </select>
+        <button onclick="startInterview()">Start Interview</button>
+
+        <div id="question-box" style="display:none;">
+            <h3 id="question"></h3>
+            <textarea id="answer" placeholder="Type your answer here..."></textarea>
+            <button onclick="submitAnswer()">Submit Answer</button>
+            <p id="feedback" class="feedback"></p>
+        </div>
+    </div>
+    <script src="question.js"></script>
+</body>
+</html>

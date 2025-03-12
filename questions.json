@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "topic": "JavaScript",
+        "question": "What are variables in JavaScript?",
+        "answer": "Variables in JavaScript are used to store data values. They are declared using `var`, `let`, or `const`."
+    },
+    {
+        "id": 2,
+        "topic": "JavaScript",
+        "question": "What are the different ways to declare a variable in JavaScript?",
+        "answer": "You can declare a variable using `var`, `let`, or `const`. `var` has function scope, `let` has block scope, and `const` is block-scoped with an immutable binding."
+    },
+    {
+        "id": 3,
+        "topic": "JavaScript",
+        "question": "What are JavaScript data types?",
+        "answer": "JavaScript has primitive data types like Number, String, Boolean, Null, Undefined, Symbol, and BigInt, and non-primitive types like Objects and Arrays."
+    },
+    {
+        "id": 4,
+        "topic": "JavaScript",
+        "question": "What are JavaScript operators?",
+        "answer": "Operators are symbols that perform operations on values. Examples include arithmetic (`+`, `-`, `*`, `/`), comparison (`==`, `===`), logical (`&&`, `||`), and assignment (`=`)."
+    },
+    {
+        "id": 5,
+        "topic": "JavaScript",
+        "question": "What is the difference between `==` and `===`?",
+        "answer": "`==` checks for equality with type coercion, while `===` checks for strict equality without converting data types."
+    },
+    {
+        "id": 6,
+        "topic": "JavaScript",
+        "question": "What are functions in JavaScript?",
+        "answer": "Functions are reusable blocks of code that perform a specific task. They can be declared using the `function` keyword or as arrow functions."
+    },
+    {
+        "id": 7,
+        "topic": "JavaScript",
+        "question": "What is the difference between function declaration and function expression?",
+        "answer": "A function declaration (`function name() {}`) is hoisted, while a function expression (`const name = function() {};`) is not hoisted."
+    },
+    {
+        "id": 8,
+        "topic": "JavaScript",
+        "question": "What is an arrow function in JavaScript?",
+        "answer": "An arrow function is a shorter syntax for writing functions using `=>` and does not have its own `this` context."
+    },
+    {
+        "id": 9,
+        "topic": "JavaScript",
+        "question": "What are conditional statements in JavaScript?",
+        "answer": "Conditional statements like `if`, `else if`, and `else` control the flow of execution based on conditions."
+    },
+    {
+        "id": 10,
+        "topic": "JavaScript",
+        "question": "What is the purpose of loops in JavaScript?",
+        "answer": "Loops (`for`, `while`, `do-while`) allow executing a block of code multiple times until a condition is met."
+    },
+    {
+        "id": 11,
+        "topic": "HTML",
+        "question": "What is the difference between HTML and XHTML?",
+        "answer": "XHTML is a stricter, XML-based version of HTML that requires well-formed syntax (e.g., lowercase tags, properly closed elements)."
+    },
+    {
+        "id": 12,
+        "topic": "HTML",
+        "question": "What are semantic HTML elements?",
+        "answer": "Semantic elements provide meaning to the structure of a webpage, like `<article>`, `<section>`, `<header>`, and `<footer>`."
+    },
+    {
+        "id": 13,
+        "topic": "HTML",
+        "question": "What is the purpose of the `alt` attribute in the `<img>` tag?",
+        "answer": "The `alt` attribute provides alternative text for images, improving accessibility and SEO."
+    },
+    {
+        "id": 14,
+        "topic": "HTML",
+        "question": "What is the difference between `<div>` and `<span>`?",
+        "answer": "`<div>` is a block-level element used for layout, while `<span>` is an inline element used for styling small portions of text."
+    },
+    {
+        "id": 15,
+        "topic": "HTML",
+        "question": "What is the use of the `viewport` meta tag in HTML?",
+        "answer": "The `viewport` meta tag ensures proper rendering and scaling of webpages on mobile devices."
+    },
+    {
+        "id": 16,
+        "topic": "HTML",
+        "question": "What is the difference between absolute, relative, and fixed positioning in CSS?",
+        "answer": "Absolute positions an element relative to its nearest positioned ancestor, relative positions it from its normal position, and fixed keeps it in place relative to the viewport."
+    },
+    {
+        "id": 17,
+        "topic": "HTML",
+        "question": "What is the purpose of the `<form>` tag in HTML?",
+        "answer": "The `<form>` tag is used to collect user input through elements like text fields, checkboxes, and buttons."
+    },
+    {
+        "id": 18,
+        "topic": "HTML",
+        "question": "What is the difference between `<b>` and `<strong>` tags in HTML?",
+        "answer": "`<b>` makes text bold for styling purposes, whereas `<strong>` indicates importance for accessibility and SEO."
+    },
+    {
+        "id": 19,
+        "topic": "HTML",
+        "question": "What is the difference between `<em>` and `<i>` in HTML?",
+        "answer": "`<em>` is used for emphasizing text with meaning, while `<i>` is used for stylistic italic text without added importance."
+    },
+    {
+        "id": 20,
+        "topic": "HTML",
+        "question": "What is the purpose of the `data-` attribute in HTML?",
+        "answer": "The `data-` attribute allows developers to store custom data in HTML elements, which can be accessed via JavaScript."
+    }
+]
